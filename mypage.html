@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr" style="background-color:Gray;">
+  <head>
+    <meta charset="utf-8">
+    <title>basic mypage</title>
+    <style media="screen">
+      img {
+        display: block;
+        margin: auto;
+      }
+      .menu {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .mypageph {
+        display: flex;
+        justify-content: center;
+      }
+      .hd1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="basic.html">
+      <img src="hello.png" alt="geumsle" title="here is mypage">
+    </a>
+
+    <hr>
+
+    <!-- 로그인 + mypage 메뉴 버튼 -->
+    <div class="menu">
+      <div class="login">
+        <a href="login.html"> <input type="button" name="login" value="login"> </a>
+      </div>
+
+      <div class="mypage">
+        <a href="mypage.html"> <input type="button" name="mypage" value="mypage"> </a>
+      </div>
+
+    </div>
+    <hr>
+
+    <!-- 내용 시작 -->
+    <div class="hd1">
+        <h1>my page</h1>
+    </div>
+
+
+    <div class="mypageph">
+
+      색깔 <input type="color" />
+      <form>
+        <select class="" name="item">
+          <option value="전통">전통</option>
+          <option value="문양">문양</option>
+        </select>
+      </form>
+
+    </div>
+
+
+    <hr>
+  </body>
+</html>

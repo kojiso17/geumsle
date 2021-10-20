@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr" style="background-color:Gray;">
+  <head>
+    <meta charset="utf-8">
+    <title>basic login</title>
+    <style media="screen">
+      img {
+        display: block;
+        margin: auto;
+      }
+      .menu {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .logintext {
+        display: flex;
+        justify-content: center;
+        padding: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 이미지 링크 연결 -->
+    <div class="">
+      <a href="basic.html">
+        <img src="hello.png" alt="geumsle" title="welcome geumsle!!">
+      </a>
+
+    </div>
+
+    <hr>
+
+    <!-- 로그인 + mypage 메뉴 버튼 -->
+    <div class="menu">
+      <div class="login">
+        <a href="login.html"> <input type="button" name="login" value="login"> </a>
+      </div>
+
+      <div class="mypage">
+        <a href="mypage.html"> <input type="button" name="mypage" value="mypage"> </a>
+      </div>
+
+    </div>
+    <hr>
+
+    <!-- div가 아니라 form인지 이해가 안 댐 -->
+    <div class="logintext">
+      <div class="">
+        <form>
+          <input type="email" name="id" placeholder="이메일">
+          <input type="password" name="password" placeholder="비밀번호">
+          <button type="submit" name="로그인">로그인</button>
+        </form>
+      </div>
+
+    </div>
+
+    <hr>
+
+
+  </body>
+</html>

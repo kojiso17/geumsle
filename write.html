@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr" style="background-color:Gray;">
+  <head>
+    <meta charset="utf-8">
+    <title>글쓰기</title>
+    <style media="screen">
+      .menu {
+        display : flex;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="">
+
+      <a href="basic.html"> <!-- 이미지 링크 연결 -->
+        <img src="hello.png" alt="geumsle" title="welcome geumsle!!" style="width:100%">
+      </a>
+
+    </div>
+
+    <hr>
+
+    <!-- 로그인 + mypage  메뉴버튼-->
+    <div class="menu">
+      <div class="login">
+        <a href="login.html"> <input type="button" name="login" value="login"> </a>
+      </div>
+
+      <div class="mypage">
+        <a href="mypage.html"> <input type="button" name="mypage" value="mypage"> </a>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <form>
+      <!-- 이름 글자수 제한 + 텍스트 없을 시 alert 뜸  -->
+      이름 <input type="text" name="name" placeholder="이름" maxlength="4" required> <br>
+      날짜 <input type="date" name="date" value="date"> <br>
+      내용 <textarea name="write" rows="8" cols="80"></textarea>
+      <button type="submit">확인</button>
+
+    </form>
+
+
+  </body>
+</html>
