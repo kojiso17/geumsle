@@ -6,6 +6,14 @@
     <style media="screen">
       .menu {
         display : flex;
+        justify-content: flex-end;
+      }
+      img {
+        display: block;
+        margin : auto;
+      }
+      .writeph {
+
       }
     </style>
 
@@ -13,9 +21,10 @@
   <body>
     <div class="">
 
-      <a href="index.html"> <!-- 이미지 링크 연결 -->
-        <img src="hello.png" alt="geumsle" title="welcome geumsle!!" style="width:100%">
-      </a>
+        <a href="index.html">
+          <img src="hello.png" alt="geumsle" title="here is mypage">
+        </a>
+
 
     </div>
 
@@ -35,14 +44,21 @@
 
     <hr>
 
-    <form>
-      <!-- 이름 글자수 제한 + 텍스트 없을 시 alert 뜸  -->
-      이름 <input type="text" name="name" placeholder="이름" maxlength="4" required> <br>
-      날짜 <input type="date" name="date" value="date"> <br>
-      내용 <textarea name="write" rows="8" cols="80"></textarea>
-      <button type="submit">확인</button>
+    <div class="writeph">
 
-    </form>
+      <form class="" action="index.html" method="post">
+          <!-- 이름 글자수 제한 + 텍스트 없을 시 alert 뜸  -->
+          이름 <input type="text" name="name" placeholder="이름" maxlength="4" required> <br>
+      </form>
+      <form class="" action="index.html" method="post">
+          날짜 <input type="date" name="date" value="date"> <br>
+      </form>
+      <form class="" action="index.html" method="post">
+          내용 <textarea name="write" rows="8" cols="80"></textarea><button type="submit">확인</button>
+      </form>
+
+
+    </div>
 
 
   </body>
