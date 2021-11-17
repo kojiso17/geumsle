@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="ko" dir="ltr" style="background-color:Gray;">
+<html lang="en" dir="ltr" style="background-color:Gray;">
   <head>
     <meta charset="utf-8">
     <title>basic mypage</title>
     <style media="screen">
+      hr {
+        width: 70%
+      }
       img {
         display: block;
         margin: auto;
@@ -29,7 +32,7 @@
       }
 
       form div + div {
-        /* 폼 위젯 사이에 여백 추가*/
+        /* form 위젯 사이에 여백 추가*/
         margin-top : 1em;
       }
       label {
@@ -96,7 +99,7 @@
         </div>
 
         <div class="button" style="text-align:end;">
-          <button type="submit">Send your message</button>
+          <button type="submit" onclick="myname()">Send your message</button>
         </div>
       </form>
 

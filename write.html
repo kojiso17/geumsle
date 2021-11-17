@@ -6,14 +6,38 @@
     <style media="screen">
       .menu {
         display : flex;
-        justify-content: flex-end;
+        justify-content: center;
       }
       img {
         display: block;
         margin : auto;
       }
-      .writeph {
+      hr {
+        width: 70%
+      }
+      form {
+        /* just to center the form on the page */
+        width: 400px;
+        /* To see the outline of the form */
+        padding : 1em;
+        border : 1px solid #CCC;
+        border-radius : 1em;
+      }
+      form input:focus textarea:focus {
+        width: 300px;
 
+      }
+      form div + div {
+        /* form 위젯 사이에 여백 추가*/
+        margin-top : 1em;
+      }
+      .writeph {
+        display: flex;
+        justify-content: center;
+      }
+      label {
+        display: inline-block;
+        width: 20%
       }
     </style>
 
@@ -46,15 +70,17 @@
 
     <div class="writeph">
 
-      <form class="" action="index.html" method="post">
+      <form class="user_info" action="foo.html" method="get">
           <!-- 이름 글자수 제한 + 텍스트 없을 시 alert 뜸  -->
-          이름 <input type="text" name="name" placeholder="이름" maxlength="4" required> <br>
-      </form>
-      <form class="" action="index.html" method="post">
-          날짜 <input type="date" name="date" value="date"> <br>
-      </form>
-      <form class="" action="index.html" method="post">
-          내용 <textarea name="write" rows="8" cols="80"></textarea><button type="submit">확인</button>
+          <label for="name"> name :</label>
+          <input type="text" name="name" placeholder="이름" maxlength="4" required> <br>
+
+          <label for="date"> date :</label>
+          <input type="date" name="date" value="date"> <br>
+
+          <label for="message">message :</label>
+          <textarea name="write"rows="10"cols="30"></textarea>
+          <button type="submit">확인</button>
       </form>
 
 
