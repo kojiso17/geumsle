@@ -45,7 +45,12 @@
   </head>
   <body>
 
-    <a href="index.html"> <!-- 이미지 링크 연결 -->
+    <!-- javascript 집어넣기 -->
+    <script src="script.js" charset="utf-8"></script>
+
+
+    <!-- 이미지 링크 연결 -->
+    <a href="index.html">
       <img src="hello.png" alt="geumsle" title="welcome geumsle!!">
     </a>
 
@@ -66,8 +71,9 @@
 
     <div class="basicbackground">
       <div class="firstPh">
-        <h1 style="font-family:courier;">HELLO</h1>
-        <p>ALWAYS BE HAPPY :)</p>
+        <h1 style="font-family:courier;"> HELLO </h1>
+        <h2>ALWAYS BE HAPPY :)</h2>
+        <h2 id="userName" onclick="checkUserName()"> Click Me! </h2>
       </div>
       <!-- 게시판 -->
 
