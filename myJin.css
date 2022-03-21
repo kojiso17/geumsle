@@ -1,5 +1,22 @@
 @charset "UTF-8";
 
-style {
-  background-color: black;
+html {
+  background-color: beige;
+}
+
+table {
+  border: 1px solid white;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin: auto;
+}
+tr:hover {
+  background-color: gold;
+}
+th, td {
+  border-bottom: 1px solid beige;
+  text-align: center;
+  padding-left: 70px;
+  padding-right: 70px;
+
 }
