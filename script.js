@@ -10,6 +10,7 @@ function checkUserName() {
 
   if (userName == "") {
     const userName = prompt('바르게 적어주세요.');
+    userNameIs.innerText = userName;
   } else {
     console.log(userName);
     userNameIs.innerText = userName;
