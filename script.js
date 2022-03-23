@@ -30,6 +30,18 @@ function watchWord() {
 
 
 
+// 로그인 버튼 클릭시
+
+
+const userNameHello = document.getElementById("helloName");
+console.log(userNameHello);
+
+function loginButton() {
+  alert("로그인되었습니다.");
+  const userNameHello = document.querySelector(".user h1")
+  console.log(userNameHello);
+  userNameHello.innerText = inputName;
+}
 
 const inputName = document.querySelector("inpName");
-const buttonName = document.querySelector("btnName");
+console.log(inputName);
