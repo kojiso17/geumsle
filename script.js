@@ -29,11 +29,12 @@ function watchWord() {
 // input 내용 받아오기
 
 // 버튼 생성 후 버튼 실행시 inputName의 value 값 가져외기
-const userNameHello = document.getElementById("logintext");
+const userNameHello = document.getElementById("inpName");
 const loginBtn = document.getElementById("inpBtn")
 
-function loginButton() {
-  alert("로그인되었습니다.");
+function onloginButton() {
+  console.log("hello", userNameHello.value);
 
-  console.log(userNameHello);
 }
+
+loginBtn.addEventListener("click", onloginButton());
