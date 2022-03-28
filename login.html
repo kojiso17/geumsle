@@ -33,14 +33,13 @@
 
     <!-- 로그인 + mypage 메뉴 버튼 -->
     <div class="menu">
-     <div class="login">
+      <div class="login">
         <a href="login.html"> <input type="image" src="loginbtn.png" name="login" value="login"> </a>
       </div>
 
       <div class="mypage">
         <a href="mypage.html"> <input type="image" src="todolist.png" name="mypage" value="mypage"> </a>
       </div>
-      
 
     </div>
     <hr>
@@ -48,13 +47,12 @@
 
     <div class="logintext">
         <form action="">
-          <input type="text" name="id" placeholder="이름" id="inpName">
-
+          <input type="text" placeholder="이름" id="inpName">
+          <input type="button" name="login" value="로그인" onclick="onloginButton()" id="inpBtn">
           <a href="foo.html">
-            <input type="button" name="login" value="로그인" onclick="loginButton()">
 
           </a>
-        
+
         </form>
 
     </div>
