@@ -1,11 +1,13 @@
 @charset "UTF-8";
 
+
 html {
   background-color: black;
+
 }
 
 table {
-  border: 1px solid black;
+  border: 1px solid white;
   padding-left: 70px;
   padding-right: 70px;
   margin: auto;
@@ -19,4 +21,12 @@ th, td {
   padding-left: 70px;
   padding-right: 70px;
 
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  color : gold;
 }
