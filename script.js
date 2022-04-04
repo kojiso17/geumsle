@@ -1,24 +1,22 @@
 
-const userNameIs = document.querySelector(".firstPh h2");
+const userNameIs = document.getElementById("userNameH2");
 
 // 이름값 집어넣으면 h1에서 호출하기
 // 누르면 안 보이는 글씨 보이게 하기
 function watchWord() {
-  const hello = document.getElementById("hello");
-  const hello2 = document.getElementById("hello2")
-  hello.style.color = "gold";
-  hello2.style.color = "gold";
-  //userNameIs.style.color = "black";
+  const helloUser = document.getElementById("hello")
 
-  const userName = prompt('what is your name?');
+  const userName = prompt('이름이 무엇이오?'); // 이름 묻는 창
 
-  if (userName == "") {
+  if (userName == "" || userName == null) {
     const userName = prompt('바르게 적어주세요.');
-    userNameIs.innerText = userName;
   } else {
     console.log(userName);
-    userNameIs.innerText = userName;
-    alert("thank you");
+    userNameIs.innerText = `환영하오.  ${userName}`; // '나를 눌러보시오' 대신 input 이름값  입력
+    // 이름값 입력하면 숨겨놨던 h1들 나타내기
+    helloUser.classList.remove("hidden");
+
+    alert("감사하오");
   }
 
 }
@@ -30,11 +28,14 @@ function watchWord() {
 
 // 버튼 생성 후 버튼 실행시 inputName의 value 값 가져외기
 const userNameHello = document.getElementById("inpName");
-const loginBtn = document.getElementById("inpBtn")
+const loginButton = document.querySelector("#logBtn")
+//const userNameChange = document.getElementById("helloName");
 
-function onloginButton() {
-  console.log("hello", userNameHello.value);
+function onloginButton(event) {
+  event.preventDefault(); //  새로고침 정지시켜놓기
+  //console.log(event);
+  console.log(userNameHello.value);
 
 }
 
-loginBtn.addEventListener("click", onloginButton());
+//loginButton.addEventListener("click", onloginButton);
