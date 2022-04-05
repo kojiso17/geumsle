@@ -2,8 +2,11 @@
 const userNameIs = document.getElementById("userNameH2");
 const USERNAME_KEY = "username";
 
-function showHello() {
 
+
+function showHello() {
+  const helloUser = document.getElementById("hello");
+  
   userNameIs.innerText = `환영하오.`;
   helloUser.classList.remove("hidden");
 
@@ -13,7 +16,7 @@ function showHello() {
 // 이름값 집어넣으면 h1에서 호출하기
 // 누르면 안 보이는 글씨 보이게 하기
 function watchWord() {
-  const helloUser = document.getElementById("hello");
+
 
   const userName = prompt('이름이 무엇이오?'); // 이름 묻는 창
 
